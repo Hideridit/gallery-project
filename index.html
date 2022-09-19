@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Project</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/src/css/bootstrap.css">
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.3/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="shortcun icon" href="./img/project.webp">
+</head>
+<body>
+    <section class="portfolio" id="portfolio">
+        <div class="heading">
+            <h2>Gallery Project</h2>
+            <p>Aditya Fitriana Nursoleh</p>
+        </div>
+        <div class="grup">
+            <p>Arduino Project</p>
+        </div>
+        <div class="portfolio-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/Suhu & Jemuran otomatis.webp" alt="Suhu & Jemuran otomatis">
+                </div>
+                <div class="content">
+                    <h3>Miniatur <br> Suhu & Jemuran otomatis</h3>
+                    <button class="border border-light rounded-2" data-bs-toggle="modal" data-bs-target="#jemuranModal">
+                        <i class="bi bi-link-45deg">Info</i>
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/RFID.webp" alt="RFID">
+                </div>
+                <div class="content">
+                    <h3>Doorlock RFID</h3>
+                    <button class="border border-light rounded-2" data-bs-toggle="modal" data-bs-target="#rfidModal">
+                        <i class="bi bi-link-45deg">Info</i>
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/Robot Bluetooth.webp" alt="Robot Bluetooth">
+                </div>
+                <div class="content">
+                    <h3>Robot Bluetooth</h3>
+                    <button class="border border-light rounded-2" data-bs-toggle="modal"
+                        data-bs-target="#bluetoothModal">
+                        <i class="bi bi-link-45deg">Info</i>
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/Tempat Sampah Otomatis.webp" alt="Tempat Sampah Otomatis">
+                </div>
+                <div class="content">
+                    <h3>Tempat Sampah Otomatis</h3>
+                    <button class="border border-light rounded-2" data-bs-toggle="modal" data-bs-target="#sampahModal">
+                        <i class="bi bi-link-45deg">Info</i>
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/Rumah Anti Maling.webp" alt="Rumah Anti Maling">
+                </div>
+                <div class="content">
+                    <h3>Miniatur Rumah Anti Maling</h3>
+                    <button class="border border-light rounded-2" data-bs-toggle="modal"
+                        data-bs-target="#miniaturModal">
+                        <i class="bi bi-link-45deg">Info</i>
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/Robot Avoider (Halang Rintangan).jpg" alt="Robot Avoider (Halang Rintangan)">
+                </div>
+                <div class="content">
+                    <h3>Robot Avoider (Halang Rintangan)</h3>
+                    <button class="border border-light rounded-2" data-bs-toggle="modal" data-bs-target="#avoiderModal">
+                        <i class="bi bi-link-45deg">Info</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Jemuran Otomatis -->
+        <div class="modal fade" id="jemuranModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Deskripsi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Project dibuat sebagai tugas akhir untuk menyelesaikan mata kuliah pengantar rekayasa
+                        perancangan. Pengerjaan dengan bersama secara kelompok, dan menggunakan software Arduino
+                        IDE.<br><br>
+                        Komponen : <br>
+                        Arduino UNO R3, Sensor Ultrasonic, Buzzer, Motor Servo, LCD I2C 16x2, Kabel jumper, dan
+                        Projectboard.
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Doorlock RFID -->
+        <div class="modal fade" id="rfidModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Deskripsi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Project yang dibuat berkelompok dan dalam bentuk miniatur. Digunakan untuk membuka pintu dengan
+                        menggunakan card yang idnya telah terdaftar pada mikrokontroler Arduino UNO dan software yang
+                        digunakan Arduino IDE.<br><br>
+                        Komponen : <br>
+                        Arduino UNO R3, Selenoid Door Lock, Buzzer, Relay, LCD I2C 16x2, Kabel jumper, Projectboard, dan
+                        Baterai.
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Robot Bluetooth -->
+        <div class="modal fade" id="bluetoothModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Deskripsi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Project yang dibuat sebagai bentuk latihan menggunakan Arduino. Digunakan untuk sebagai mainan
+                        robot dengan menggunakan bluetooth yang bisa terhubung dengan perangkat handphone sebagai remot
+                        kontrol.Software yang digunakan Arduino IDE.<br><br>
+                        Komponen : <br>
+                        Arduino UNO R3, Bluetooth HC-06, LED, Gearbox DC, L298N Driver Motor, Kabel jumper,
+                        Projectboard, dan Baterai.
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Tempat Sampah Otomatis -->
+        <div class="modal fade" id="sampahModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Deskripsi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Project yang dibuat untuk menyelesaikan tugas akhir dari mata kuliah aplikasi kewirausahaan yang
+                        dikerjakan secara berkelompok, dan menggunakan software Arduino IDE. Cara kerjanya ketika ada
+                        object / sampah didepan sensor, maka tutup tempat sampah akan terbuka sendiri secara
+                        otomatis.<br><br>
+                        Komponen : <br>
+                        Arduino UNO R3, Sensor Ultrasonic, Motor Servo, LCD I2C 16x2, Kabel jumper, Projectboard, dan
+                        Power Bank.
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Miniatur Rumah Anti Maling -->
+        <div class="modal fade" id="miniaturModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Deskripsi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Project yang dibuat sebagai bentuk latihan dalam menggunakan Arduino. Digunakan untuk sebagai
+                        mainan robot dengan
+                        menggunakan bluetooth yang bisa terhubung dengan perangkat handphone sebagai remot kontrol.
+                        Software yang digunakan Arduino IDE.<br><br>
+                        Komponen : <br>
+                        Arduino UNO R3, Bluetooth HC-06, LED, Gearbox DC, L298N Driver Motor, Kabel jumper,
+                        Projectboard, dan Baterai.
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Robot Avoider -->
+        <div class="modal fade" id="avoiderModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Deskripsi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Project yang dibuat sebagai bentuk latihan menggunakan Arduino. Digunakan untuk sebagai mainan
+                        robot dengan menggunakan sensor ultrasonic yang dimana ketika ada benda atau rintangan didepan
+                        maka akan di hindari untuk tidak ditabrak. Software yang digunakan Arduino IDE.<br><br>
+                        Komponen : <br>
+                        Arduino UNO R3, Sensor Ultrasonic, LED, Gearbox DC, L298N Driver Motor, Kabel jumper,
+                        Projectboard, dan Baterai.
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grup2">
+            <p>Website Project</p>
+        </div>
+        <div class="portfolio-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/animedit.jpg" alt="Animedit">
+                </div>
+                <div class="content">
+                    <a href="https://web-animedit.netlify.app/" style="text-decoration: none;">
+                        <h3>Animedit</h3>
+                    </a>
+                    <button class="border border-light rounded-2" data-bs-toggle="modal"
+                        data-bs-target="#animeditModal">
+                        <i class="bi bi-link-45deg">Info</i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/portfolio.png" alt="portfolio2">
+                </div>
+                <div class="content">
+                    <a href="https://portfolio-adityafns.netlify.app/" style="text-decoration: none;">
+                        <h3> My Portfolio</h3>
+                    </a>
+                    <button class="border border-light rounded-2" data-bs-toggle="modal"
+                    data-bs-target="#portfolioModal">
+                        <i class="bi bi-link-45deg">Info</i>
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/inventori.png" alt="InventoriID">
+                </div>
+                <div class="content">
+                    <a href="https://github.com/AdityaFitrianaNS/InventoriID" style="text-decoration: none;">
+                        <h3>InventoriID</h3>
+                    </a>
+                    <button class="border border-light rounded-2" data-bs-toggle="modal"
+                    data-bs-target="#inventoriModal">
+                        <i class="bi bi-link-45deg">Info</i>
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/konter.png" alt="KonterCell">
+                </div>
+                <div class="content">
+                    <a href="https://github.com/AdityaFitrianaNS/KonterCell" style="text-decoration: none;">
+                        <h3>KonterCell</h3>
+                    </a>
+                    <button class="border border-light rounded-2" data-bs-toggle="modal"
+                        data-bs-target="#konterModal">
+                        <i class="bi bi-link-45deg">Info</i>
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/pemesanan_tiket_bus.png" alt="Tiket BUS">
+                </div>
+                <div class="content">
+                    <a href="https://github.com/AdityaFitrianaNS/Pemesanan-Tiket-Bus" style="text-decoration: none;">
+                        <h3>Pemesanan Tiket BUS AKAP</h3>
+                    </a>
+                    <button class="border border-light rounded-2" data-bs-toggle="modal"
+                    data-bs-target="#tiketModal">
+                        <i class="bi bi-link-45deg">Info</i>
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/myprofilecard.PNG" alt="profile card">
+                </div>
+                <div class="content">
+                    <a href="https://myprofilcard.netlify.app/" style="text-decoration: none;">
+                        <h3>Profile Card</h3>
+                    </a>
+                    <button class="border border-light rounded-2" data-bs-toggle="modal"
+                    data-bs-target="#profileModal">
+                        <i class="bi bi-link-45deg">Info</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="animeditModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Deskripsi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Landing page website Animedit yang dibuat untuk project Animedit. Project ini sebagai latihan
+                        backend. <br><br>
+
+                        Teknologi : <br>
+                        HTML5, CSS3, Javascript, Jquery, Bootstrap5, MySQL, PHP8, dan SweetAlert2.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">
+                            <a href="https://github.com/AdityaFitrianaNS/Animedit"
+                                class="text-decoration-none text-light">Github</a>
+                        </button>
+                        <button type="button" class="btn btn-success">
+                            <a href="https://web-animedit.netlify.app/" class="text-decoration-none text-light">Demo</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Portfolio-->
+        <div class="modal fade" id="portfolioModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Deskripsi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Website yang dibuat sebagai latihan dalam membuat portofolio pertama menggunakan html,css, dan
+                        javascript.
+                        <br><br>
+
+                        Teknologi : <br>
+                        HTML5, CSS3, Javascript, dan Scrollreveal.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">
+                            <a href="https://github.com/AdityaFitrianaNS/myportfolio1"
+                                class="text-decoration-none text-light">Github</a>
+                        </button>
+                        <button type="button" class="btn btn-success">
+                            <a href="https://portfolio-adityafns.netlify.app/" class="text-decoration-none text-light">Demo</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Inventori -->
+        <div class="modal fade" id="inventoriModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Deskripsi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Website ini dibuat untuk mengolah data gudang penyimpanan barang dan dibuat sebagai pertemuan terakhir matakuliah pemrograman web lanjut. Halaman yang tersedia dimulai dari Landing Page, Login, Registrasi akun, Home, Stok barang, Barang masuk, Barang keluar, Laporan, dan User.
+                        <br><br>
+
+                        Teknologi : <br>
+                        HTML5, CSS3, Bootstrap5, PHP8, MySQL, dan SweetAlert2.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        <button type="button" class="btn btn-success">
+                            <a href="https://github.com/AdityaFitrianaNS/InventoriID" class="text-decoration-none text-light">Github</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal KonterCell -->
+        <div class="modal fade" id="konterModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Deskripsi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Dibuatnya project ini sebagai latihan, dan menerapkan ke usaha milik orangtua walaupun masih
+                        dari local dan tidak di deploy ke web hosting. Fitur yang dimiliki sudah CRUD (Simpan, Baca, Perbarui, Hapus), Menghitung diskon pembelian, dan Pencarian masing-masing tabel.
+                        <br><br>
+
+                        Teknologi : <br>
+                        HTML5, CSS3, Bootstrap5, Javascript, Jquery, PHP8, MySQL, SweetAlert2, dan Select2.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        <button type="button" class="btn btn-success">
+                            <a href="https://github.com/AdityaFitrianaNS/KonterCell"
+                                class="text-decoration-none text-light">Github</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Pemesanan Tiket Bus AKAP-->
+        <div class="modal fade" id="tiketModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Deskripsi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Dibuatnya project ini sebagai sertifikasi uji kompetensi yang dilaksanakan oleh BNSP. Ujian yang diberikan adalah membuat UI untuk menampilkan jenis bus, pemesanan tiket, perhitungan harga tiket sesuai ketentuan yang diminta, dan lainnya.
+                        <br><br>
+
+                        Teknologi : <br>
+                        HTML5, CSS3, Bootstrap5, Javascript, Jquery, PHP8, MySQL, dan SweetAlert2.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        <button type="button" class="btn btn-success">
+                            <a href="https://github.com/AdityaFitrianaNS/Pemesanan-Tiket-Bus"
+                                class="text-decoration-none text-light">Github</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Modal Profile Card-->
+        <div class="modal fade" id="profileModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Deskripsi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Website pertama kali dibuat, dijadikan sebagai bahan latihan dan belajar.
+                        <br><br>
+
+                        Teknologi : <br>
+                        HTML5 dan CSS3.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">
+                            <a href="https://github.com/AdityaFitrianaNS/myprofilecard"
+                                class="text-decoration-none text-light">Github</a>
+                        </button>
+                        <button type="button" class="btn btn-success">
+                            <a href="https://myprofilcard.netlify.app/" class="text-decoration-none text-light">Demo</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grup3">
+            <p>Vector Anime</p>
+        </div>
+        <div class="portfolio-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/Yuna.jpg" alt="Vector Yuna">
+                </div>
+                <div class="content">
+                    <a href="https://www.deviantart.com/adityafns/art/Yuna-Kuma-Kuma-Bear-868918311"
+                        style="text-decoration: none;">
+                        <h3>Vector Yuna</h3>
+                    </a>
+                    <a href="https://www.deviantart.com/adityafns/art/Yuna-Kuma-Kuma-Bear-868918311">
+                        <i class="bi bi-link-45deg" style="font-size: 21px; padding-left: 7px; padding-right: 7px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/Kyaru.jpg" alt="Vector Kyaru">
+                </div>
+                <div class="content">
+                    <a href="https://www.deviantart.com/adityafns/art/Kyaru-Karly-Princess-Connect-Re-Dive-854332454"
+                        style="text-decoration: none;">
+                        <h3>Vector Kyaru</h3>
+                    </a>
+                    <a href="https://www.deviantart.com/adityafns/art/Kyaru-Karly-Princess-Connect-Re-Dive-854332454">
+                        <i class="bi bi-link-45deg" style="font-size: 21px; padding-left: 7px; padding-right: 7px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/maple_and_sally.jpg" alt="Vector Sally & Maple">
+                </div>
+                <div class="content">
+                    <a href="https://www.deviantart.com/adityafns/art/Maple-And-Sally-Bofuri-854509706"
+                        style="text-decoration: none;">
+                        <h3>Vector Maple & Sally</h3>
+                    </a>
+                    <a href="https://www.deviantart.com/adityafns/art/Maple-And-Sally-Bofuri-854509706">
+                        <i class="bi bi-link-45deg" style="font-size: 21px; padding-left: 7px; padding-right: 7px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/Kirin.jpg" alt="Vector Kirin">
+                </div>
+                <div class="content">
+                    <a href="https://www.deviantart.com/adityafns/art/Kirin-Toudou-749232637"
+                        style="text-decoration: none;">
+                        <h3>Vector Kirin</h3>
+                    </a>
+                    <a href="https://www.deviantart.com/adityafns/art/Kirin-Toudou-749232637">
+                        <i class="bi bi-link-45deg" style="font-size: 21px; padding-left: 7px; padding-right: 7px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/shimarin.jpg" alt="Vector Shimarin">
+                </div>
+                <div class="content">
+                    <a href="https://www.deviantart.com/adityafns/art/Shimarin-Yuru-Camp-854644324"
+                        style="text-decoration: none;">
+                        <h3>Vector Shimarin</h3>
+                    </a>
+                    <a href="https://www.deviantart.com/adityafns/art/Shimarin-Yuru-Camp-854644324">
+                        <i class="bi bi-link-45deg" style="font-size: 21px; padding-left: 7px; padding-right: 7px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/doctor_kiriha.jpg" alt="Vector Kiriha">
+                </div>
+                <div class="content">
+                    <a href="https://www.deviantart.com/adityafns/art/Doctor-Kiriha-748917609"
+                        style="text-decoration: none;">
+                        <h3>Vector Kiriha</h3>
+                    </a>
+                    <a href="https://www.deviantart.com/adityafns/art/Doctor-Kiriha-748917609">
+                        <i class="bi bi-link-45deg" style="font-size: 21px; padding-left: 7px; padding-right: 7px;"></i>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="follow">
+        <h2>Follow</h2>
+        <p style="text-align: center;">Social Media</p>
+        <div class="social-media">
+            <button class="linkedin">
+                <a href="www.linkedin.com/in/aditya-fitriana-nursoleh"><i class='bi bi-linkedin'></i></a>
+            </button>
+            <button class="github">
+                <a href="https://github.com/AdityaFitrianaNS"><i class='bi bi-github'></i></a>
+            </button>
+            <button class="devianart">
+                <a href="https://www.deviantart.com/adityafns"><i class='bi bi-vector-pen'></i></a>
+            </button>
+            <button class="instagram">
+                <a href="https://www.instagram.com/aditya.fns/"><i class='bi bi-instagram'></i></a>
+            </button>
+        </div>
+    </div>
+    <script src="/src/js/bootstrap.js"></script>
+</body>
+</html>
